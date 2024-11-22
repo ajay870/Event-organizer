@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event & Festival Organizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Event & Festival Organizer</h1>
+    <p>Find the most exciting events and festivals, along with prices and reviews!</p>
+  </header>
+
+  <main>
+    <section class="add-item">
+      <h2>Add New Event or Festival</h2>
+      <form id="itemForm">
+        <label for="type">Type:</label>
+        <select id="type" required>
+          <option value="event">Event</option>
+          <option value="festival">Festival</option>
+        </select>
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" placeholder="Enter title" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" rows="3" placeholder="Enter a brief description" required></textarea>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" placeholder="Enter price in USD" required>
+
+        <label for="review">Review:</label>
+        <textarea id="review" rows="2" placeholder="Enter a brief review" required></textarea>
+
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section class="list">
+      <h2>Festivals</h2>
+      <ul id="festivals"></ul>
+    </section>
+
+    <section class="list">
+      <h2>Events</h2>
+      <ul id="events"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Event & Festival Organizer. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
